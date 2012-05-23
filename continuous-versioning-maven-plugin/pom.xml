@@ -26,7 +26,6 @@
     <packaging>maven-plugin</packaging>
 
     <artifactId>continuous-versioning-maven-plugin</artifactId>
-    <version>0.1.0</version>
 
     <properties>
         <mavenVersion>2.2.1</mavenVersion>
@@ -183,6 +182,9 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <goalPrefix>continuous</goalPrefix>
+                </configuration>
             </plugin>
         </plugins>
     </build>
